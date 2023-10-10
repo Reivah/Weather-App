@@ -127,14 +127,31 @@ body {
     width: 110px;
 }
 
-.lower-body {
-    margin: 40px auto 40px;
+
+.lower-body-one, .lower-body-two {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 40px auto;
+    text-align: center;
 }
 
 .weather-box {
+    margin-left: 50px;
     display: flex;
-    align-items: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.weather-info {
+    text-align: left;
+}
+
+
+
+
+
+
+.weather-box .icon {
+    margin-left: 10px;
+    font-size: 25px;
+    
 }
