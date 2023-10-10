@@ -73,7 +73,7 @@ body {
 .city-search {
     padding: 5px 8px;
     margin: 10px auto;
-    width: 50%;
+    width: 40%;
     background: none;
     color: #fff;
     font-size: 24px;
@@ -87,8 +87,26 @@ body {
     padding: 8px 14px;
     font-size: 18px;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 5px rgb(3, 3, 3);
     border: none;
     color: #fff;
+    background-color: #0202023d;
     text-transform: uppercase;
+    transition: transform .3s;
+    cursor: pointer;
 }
+
+.search-btn:hover {
+    transform: scale(1.1);
+}
+
+.city-result {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.date {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
