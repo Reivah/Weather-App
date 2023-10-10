@@ -134,3 +134,7 @@ body {
     justify-content: space-between;
 }
 
+.weather-box {
+    display: flex;
+    align-items: center;
+}
