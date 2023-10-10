@@ -126,3 +126,11 @@ body {
 .image-box img {
     width: 110px;
 }
+
+.lower-body {
+    margin: 40px auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
