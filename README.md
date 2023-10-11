@@ -11,7 +11,7 @@ One of the standout features of this application is its ability to translate cit
 - Real-time weather data retrieval from external APIs.
 - Detailed weather information, including temperature, wind speed, wind direction, pressure, and humidity.
 - City name translation to English, enhancing user experience.
-- A user-friendly and responsive web interface.
+
 
 
 ## Tech Stack
