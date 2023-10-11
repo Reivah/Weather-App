@@ -21,7 +21,10 @@ const weatherData = () => {
         couldsInfo.textContent = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1)
         console.log(data);
         feelsTemp.textContent = `${Math.round(data.main.feels_like)}°C`
-        humidity.textContent = `${data.main.humidity}%`
+        humidity.textContent = `${data.main.humidity} %`
+        windSpeed.textContent = `${data.wind.speed} m/s`
+        windDeg.textContent = `${data.wind.deg}°`
+        pressure.textContent = `${data.main.pressure} hPa`
     })
 }
 
