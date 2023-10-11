@@ -11,6 +11,12 @@ const windSpeed = document.querySelector('.wind-speed')
 const windDeg = document.querySelector('.wind-deg')
 const pressure = document.querySelector('.pressure')
 
+const weatherData = () => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${citySearch.value}&appid=a74b4223c04fb2978fa22db3652f8b6d&units=metric&land={pl}`)
+    .then((Response) => Response.json())
+    .then((data) => {
+        cityResult.textContent = data.name
+    })
+}
 
-
-// https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={a74b4223c04fb2978fa22db3652f8b6d}&units=metric&land={pl}
+weatherData()
