@@ -16,6 +16,12 @@ const weatherData = () => {
     .then((Response) => Response.json())
     .then((data) => {
         cityResult.textContent = data.name
+        date.textContent = new Date().toDateString()
+        mainTemp.textContent = `${Math.round(data.main.temp)}°C`
+        couldsInfo.textContent = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1)
+        console.log(data);
+        feelsTemp.textContent = `${Math.round(data.main.feels_like)}°C`
+        humidity.textContent = `${data.main.humidity}%`
     })
 }
 
