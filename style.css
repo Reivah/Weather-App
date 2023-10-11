@@ -10,6 +10,8 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    background: #7a52c0;
+    background: linear-gradient(135deg, #534964, #67477c);
     font-family: 'Montserrat', sans-serif;
 }
 
