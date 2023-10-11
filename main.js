@@ -70,7 +70,16 @@ const weatherData = () => {
             }
 		})
         .catch(() => alert('Cant find city name'))
+        citySearch.value = ''
 }
+
+
+
+citySearch.addEventListener('keydown', function(e) {
+    if(e.code === 'Enter'){
+        weatherData()
+    }
+})
 
 submitBtn.addEventListener('click', weatherData)
 
